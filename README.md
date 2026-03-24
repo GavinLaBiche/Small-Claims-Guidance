@@ -1,32 +1,45 @@
-# Small-Claims-Guidance
+Gavin
+What This Skill Does
 Helps users navigate small-scale legal problems like contract disputes, property damage, and landlord-tenant issues. Covers filing claims, court procedures, pleading standards, and deadlines. Offers plain-language guidance on gathering evidence and preparing for hearings. Not legal advice — always verify local rules.
----
-name: small-claims-court-guidance
-description: This skill should help someone who has small scale legal problems. Such problems could include a breach of contract with a low monetary value, tortious property damage, eviction proceedings, or unsatisfactory work issues. It should cover specific tasks, such as filing rules, legal procedure, pleading standards, prescription issues, and putting on evidence. This skill should relay the information in 8th-grade level English. Further, at all times, it should be clear it's not offering legal advice, so much as informative steps on how to proceed. Location should always be a consideration, as jurisdiction matters.
----
- 
-Step one:
-Gather relevant information and facts. (These include where the person is located, what problem they are having, how long ago this problem happened, etc.)
- 
-Step two:
-Ask for upload/specific wording
-If there is a paper trail in this case, ask for what it says specifically. If its a contract, then ask for what the breach clause says, if its an eviction notice, ask for timeline information. At all times, ensure that no security or information laws are violated by the questions. If the user volunteers illegal information, inform the user.
- 
-Step Three:
-Categorization:
-Gather the information the user has given you and synthesis it. What type of problem are they having, what jurisdiction are they in, is their claim potentially prescribed, etc.
- 
-Step Four:
-Debrief the user on what their potential claims are. Use plain language when breaking it down and detail specific information that hints towards that claim. Always using hedging language that emphasizes the program is not a lawyer. Put special emphasis on most outstanding legal issues.
- 
-Step Five:
-Potential Next Steps:
-Identify the next step the user can take. Are there potential problems with filing? Is notice necessary? Be specific about potential procedural missteps. Maintain at all times this isn’t legal advice.
- 
-Step Six: 
-Lead to help
-Identify if there are standardized forms they can use or a legal organization that can help. 
- 
-Step Seven:
-If they clearly demonstrate they understand that the program is not offering legal advice, give some drafting guidelines if they insist on doing it themselves. At all times, be clear that the program is not the same as a lawyer. 
+How to Use
+
+Download the SKILL.md file from this repository
+Go to claude.ai → Settings → Skills
+Upload the SKILL.md file
+Toggle the skill on
+Start a new conversation and try one of the sample prompts below
+
+Sample Prompts
+Try these prompts to test the skill:
+
+"My landlord kept my security deposit but never gave me a reason. It's been 45 days. What can I do?"
+"I paid a contractor $1,200 to fix my roof but the leaks are worse than before. Can I take them to small claims court?"
+
+Design Notes
+
+Scenario: Small Claims Court Self-represented
+Workflow steps: 7 steps — from gathering facts, reviewing documents, and categorizing the legal issue, to explaining potential claims, identifying next steps, connecting users with resources, and (if they proceed on their own) providing basic drafting guidelines.
+Key design choice: The most important design decision was building in persistent, non-preachy disclaimers at every step. Rather than warning users once and moving on, the skill reminds them throughout that it is not a lawyer and that its guidance is general information — not legal advice. This is paired with an instruction to be honest but not harsh, keeping guidance grounded rather than validating every user assumption.
+
+Step-by-Step Workflow
+Step 1 — Gather the Facts
+The skill asks where the user is located, what problem they're having, and when it happened. Jurisdiction and timing matter a lot in small claims cases.
+Step 2 — Review the Paper Trail
+If documents are involved (a contract, lease, invoice, eviction notice), the skill asks for the relevant language — especially things like breach clauses or deadlines. Users are reminded not to share sensitive personal data, and if they share anything that raises a legal red flag, they're told.
+Step 3 — Categorize the Problem
+The skill synthesizes what the user has shared: What type of legal issue is this? What state or parish are we in? Is there a risk the claim is time-barred (prescribed)?
+Step 4 — Explain Potential Claims
+Using plain, 8th-grade-level language, the skill walks through what legal claims might apply and why — always with hedging language like "this could potentially be..." The most important legal issues get extra attention.
+Step 5 — Identify Next Steps
+The skill flags any procedural landmines: Do you need to send a demand letter first? Are there notice requirements? Is the courthouse the right venue? Missteps here can sink a valid case.
+Step 6 — Connect to Resources
+The skill points users toward standardized court forms, self-help legal clinics, law school clinics, or legal aid organizations that may be able to assist.
+Step 7 — Drafting Guidelines (If User Proceeds Alone)
+If the user clearly acknowledges they understand this is not legal advice and still wants to draft their own filing, the skill provides basic drafting guidelines — how to organize facts, what to include, what to avoid. The skill never pretends this replaces an attorney.
+Disclaimer
+This skill provides general legal information only — not legal advice. It was created as a class project for LAW 5642: Legal Analytics and Generative AI at LSU Law School. Users should consult a licensed attorney for guidance specific to their situation.
+Author
+Gavin LaBiche · LSU Law School · Spring 2026
+License
+MIT License — see LICENSE file for details. 
 Extra: Be emphatic but not sycophantic. These are people having legal troubles, but their every whim should not be validated. Give them the truth, just not brutally. 
